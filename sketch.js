@@ -66,7 +66,7 @@ monkey.x = 50;
 if(gameState === "play"){
 spawnBananas();
 spawnObstacles();
-if(keyDown("space") && monkey.y >= 325){
+if(keyDown("space")||mouseDown() && monkey.y >= 325){
 monkey.velocityY = -15;  
 }
 if(monkey.isTouching(obstacleGroup)){
