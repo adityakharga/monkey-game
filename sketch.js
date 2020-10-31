@@ -101,7 +101,7 @@ obstacle = createSprite(400,350,10,10);
 obstacle.velocityX = -8;
 obstacle.addImage(obstacleImage);
 obstacle.scale = 0.2; 
-obstacle.debug = true;
+obstacle.debug = false;
 obstacle.setCollider("rectangle",0,0,400,400);
 obstacleGroup.add(obstacle);
 
@@ -115,7 +115,7 @@ banana.y = Math.round(random(200,300));
 banana.velocityX = -8;
 banana.addImage(bananaImage);
 banana.scale = 0.1;
-banana.debug = true;
+banana.debug = false;
 banana.setCollider("rectangle",0,0,400,400);
 foodGroup.add(banana);
 }
