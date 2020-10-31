@@ -74,6 +74,7 @@ gameState = "end"
 }
 if(monkey.isTouching(foodGroup)){
 score = score+1;
+foodGroup.destroyEach();
 }
 console.log(score);
 }
